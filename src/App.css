@@ -1,0 +1,20 @@
+
+.App-header {
+  background: repeating-linear-gradient(-45deg,#001a21,#001a29 50px,#001a40 50px);
+  height: auto;
+  color: white;
+}
+
+.loader {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+hr {
+  height: 10px;
+  background: #001a21;
+}

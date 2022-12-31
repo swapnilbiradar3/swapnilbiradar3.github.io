@@ -1,0 +1,17 @@
+.right {
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.newpage {
+    display: "table-cell";
+}
+
+.bgblur{
+    background-color: #001a21;
+}

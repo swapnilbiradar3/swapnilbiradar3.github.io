@@ -1,0 +1,50 @@
+.heading {
+    color: cyan;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 20px;
+    
+}
+
+.justify{
+    text-align: justify;
+}
+
+.fontc{
+    color:cyan;
+    font-size: 40px;
+}
+
+.cardstyling {
+    max-width: 1000px;
+    background: transparent;
+    width: 100%;
+
+}
+
+
+.iconstyle{
+    display: flex;
+    width:  100px;
+    height: 100px;
+}
+
+.cardborder{
+    border-color: transparent
+}
+
+.cardimg  {
+    display: flex;
+    max-width: 100%;
+    height: 390px;
+  }
+  
+.cardbg {
+    background: transparent;
+    border-color: transparent;
+}
+
+
+.pcolor {
+    color: cyan;
+}

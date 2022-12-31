@@ -1,0 +1,102 @@
+.fontc{
+    color:black;
+}
+
+.subheadingfont {
+    color: white;
+}
+
+.fontheading{
+    color:cyan;
+    font-size: 40px;
+}
+
+.fullpagepadding {
+    height: 100vh;
+}
+
+.btnsize {
+    width: 160px;
+    height: 40px;
+}
+
+.cardbgcolor {
+    background-color: #001a27;
+
+}
+
+.bordercolor{
+    border-color: white;
+}
+
+.bordercolor:hover {
+    border-color: cyan;
+}
+
+
+.sizeofcard{
+    min-height: 25rem;
+    height: auto;
+}
+
+.techstack {
+    font-size: smaller;
+    color: cyan;    
+    align-items: right;
+    align-content: right;
+    position:absolute;
+    bottom:10px;
+}
+
+  
+.sizeofimg {
+    width: 10rem;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+.containerfeature {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  max-width: 720px;
+  min-height: 400px;
+  height: auto;
+  border-radius: 10px;
+  background: #002935;
+  color: white;
+}
+
+.imgfeature {
+  width: 300px;
+  max-height: 330px;
+  margin-top: 12%;
+  margin-left: 10%;
+  border-radius: 5%;
+  opacity: 0.6;
+}
+
+.containerfeature:hover .imgfeature{
+    opacity: 1;
+}
+
+
+.product {
+  position: relative;
+  height: 100%;
+  width: 92%;
+  top: 15%;
+  left:1.5%;
+  justify-content: center;
+}
+
+
+.techbottom{
+    font-size: smaller;
+    color: cyan;    
+}
+
+

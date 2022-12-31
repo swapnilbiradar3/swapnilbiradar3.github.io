@@ -1,0 +1,82 @@
+.fontc{
+    color:cyan;
+    font-size: 50px;
+}
+
+.fontd{
+    color:cyan;
+}
+
+.fontanchor{
+    color:white;
+}
+
+
+
+.subheadingfont {
+    color: white;
+}
+
+.bodyclass {
+    overflow:auto;
+}
+
+.btnclass {
+    align-items: right;
+    align-content: right;
+}
+
+
+.fontsizeor{
+    font-size: 50px;
+}
+
+.contactform{
+    min-height: 100vh;
+    height: auto;
+}
+
+.map {
+    height: 89vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.fullbody{
+    overflow: hidden;
+}
+
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    transition: 0.3s ease-in-out;
+    align-content: center;
+    align-items: center;
+  }
+  
+
+  
+  .btn:hover {
+    transition: 0.5s ease-in-out;
+    background: cyan;
+    color: black;
+  }
+  
+ 
+  .btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+
+  .cardbgandborder{
+      background: transparent;
+      border-color: transparent;
+      max-width: 400px;
+  }
+

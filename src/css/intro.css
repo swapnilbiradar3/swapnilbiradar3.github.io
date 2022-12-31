@@ -1,0 +1,94 @@
+.padding{
+    padding-top: 150px;
+}
+
+.i-title{
+    height: 60px;
+    overflow: hidden;
+}
+
+.i-wrapper{
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+    
+}
+
+@keyframes move {
+
+    33.33% {
+        transform: translateY(-50px);
+    }
+    66.66% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(-150px);
+    }
+    /* 100% {
+        transform: translateY(-200px);
+    } */
+    
+}
+
+.i-skills {
+    height: 50px;
+    font-size: 20px;
+    color: #00FFFF;
+    display: flex;
+    align-items: center;
+}
+
+
+.i-name{
+    font-size: 80px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.circle-img {
+    max-width: 600px;
+    max-height: 650px;
+    height: auto;
+    min-height: auto;
+    min-width: auto;
+    width: 100%;
+    display: flex;
+  }
+
+  .jumbobg {
+    background-color:#282c37;
+  }
+
+  .jumbotron{
+    height: auto;
+    min-height: 100vh;
+    background: repeating-linear-gradient(-45deg,#001a21,#001a29 50px,#001a40 50px);
+
+    /* background: url("../cssimages/jumbobg1.png"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        
+}
+
+.page-scroll{
+  height:5000px;
+}
+
+.btn-outline-danger{
+  color:white;
+  border-color:white;
+  border-radius:0px;
+  font-weight:100;
+  margin-top:20px;
+}
+.lead{
+  font-family:raleway;
+  font-weight:100;
+  margin-top:-10px;
+}

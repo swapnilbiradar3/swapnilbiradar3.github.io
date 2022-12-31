@@ -1,0 +1,11 @@
+.footerstyling {
+    background-color: black;
+}
+
+.fontstyling {
+    color: white;
+}
+
+.fontstyling:hover{
+    color:cyan;
+}
