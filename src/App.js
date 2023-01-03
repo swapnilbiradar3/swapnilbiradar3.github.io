@@ -1,7 +1,8 @@
 import Maincomponent from "./Components/Maincomponent";
 import {useState, useEffect} from 'react';
 import { css } from "@emotion/react";
-import CircleLoader from "react-spinners/CircleLoader";
+import HashLoader from "react-spinners/HashLoader";
+
 import { Fade } from "react-awesome-reveal";
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       {
          loading ? (
           <div className="loader">
-            <CircleLoader color={"#36D7B7"} 
+            <HashLoader color={"#36D7B7"} 
             loading={loading} 
             size={50} />
             &nbsp;&nbsp;&nbsp;
