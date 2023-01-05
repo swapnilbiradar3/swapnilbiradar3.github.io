@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-//import { Link } from "react-router-dom";
-import { Fade } from "react-awesome-reveal";
-//import {Card, Button} from 'react-bootstrap';
+import Fade from "react-reveal/Fade";
 import { PROJECTS } from "../shared/projectdata";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWrench, faFolder, faCog } from "@fortawesome/free-solid-svg-icons";
@@ -34,23 +32,6 @@ class Project extends Component {
     console.log(this.state.isloadmore);
   }
 
-  /*
-    <section id={project.id}>
-        <div className="card  cardbgcolor">
-            <div className="underlyingcard wrapper" style={mystyle} >
-                <div class="card w-100 overlyingcard">
-                    <div class="card-body cardbgcolor cardborder">
-                        <a href={project.link}> <h5 class="card-title">{project.name} </h5> </a>
-                        <p class="card-text">{project.description} </p>
-                        <p class="card-text align-self-end techstack">{project.techstack} </p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-        */
-
   render() {
     var cardstorender;
     var button;
@@ -81,8 +62,6 @@ class Project extends Component {
         );
       }
     });
-
-    //<img class="card-img-top sizeofimg" src={project.image} alt={project.name}/>
 
     const threecards = this.state.projects.map((project) => {
       if (project.renderfirst && !project.feature) {
@@ -137,15 +116,6 @@ class Project extends Component {
         return (
           <div className="row">
             <div className="col-sm-12">
-              {/*<div className="card cardbgcolor bordercolor " id={project.id}>
-                                <div className="card-body Justify-content-center ">
-                                    <img className="align-self-center sizeofimg mr-3" src={project.image}/>                        
-                                    <a href={project.link}> <h5 className="card-title">{project.name} </h5> </a>
-                                    <p className="card-text">{project.description} </p>
-                                    <p className="card-text align-self-end techstack">{project.techstack} </p>
-                                </div>
-                            </div> */}
-
               <div className="containerfeature">
                 <div className="row">
                   <div className="col-12 col-sm-6">
@@ -206,14 +176,16 @@ class Project extends Component {
               <div className="row">
                 <div className="heading">
                   <p>
-                    <center>
-                      {" "}
-                      <h1 className="fontheading">
+                    <Fade left>
+                      <center>
                         {" "}
-                        Somethings I've Built{" "}
-                        <FontAwesomeIcon icon={faWrench} />
-                      </h1>{" "}
-                    </center>
+                        <h1 className="fontheading">
+                          {" "}
+                          Somethings I've Built{" "}
+                          <FontAwesomeIcon icon={faWrench} />
+                        </h1>{" "}
+                      </center>
+                    </Fade>
                   </p>
                 </div>
               </div>
@@ -222,9 +194,7 @@ class Project extends Component {
             <Fade triggerOnce={"true"}>
               <div className="row">
                 <div className="heading">
-                  <center>
-                    {/* <h3 className="subheadingfont"> Featured Projects </h3> */}
-                  </center>
+                  <center></center>
                 </div>
               </div>
 
@@ -234,22 +204,6 @@ class Project extends Component {
 
           <br></br>
           <br></br>
-          {/* <div >
-                        <Fade triggerOnce={"true"}>
-                        <div className="row"> 
-                            <div className="heading">
-                                <center><h3 className="subheadingfont"> Other Projects </h3></center>
-                            </div>
-                        </div>
-                    
-                        <div className="row"> 
-                            {cardstorender} 
-                        </div> 
-
-                        <br></br>
-                        <center> {button} </center>
-                        </Fade>
-                    </div> */}
         </div>
       </section>
     );

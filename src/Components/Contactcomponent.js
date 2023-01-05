@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Fade } from "react-awesome-reveal";
+import Fade from "react-reveal/Fade";
 import emailjs from "@emailjs/browser";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
@@ -69,72 +69,69 @@ const Contact = () => {
     }
   };
 
-  //   const position = [12.9716, 77.5946];
-  //https://leaflet-extras.github.io/leaflet-providers/preview/
-
-  /* https://{s}.tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.png?access-token={LJYZLnmuipDZw5xABr2xi1gqd2848lcrhTveFzkXzyp9D6ViUbYUhe8A5ajqNX7f}', {
-    attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    minZoom: 0, */
-
   return (
     <section>
       <div className="container-fluid fullbody">
         <div className="row justify-content-center">
           <div className="col-sm-6" id="contact">
             <div className="contactform">
-              <center>
-                {" "}
-                <h1 className="fontc">
+              <Fade left>
+                <center>
                   {" "}
-                  Get In Touch! <FontAwesomeIcon icon={faEnvelopeOpenText} />
-                </h1>{" "}
-              </center>
-              <p>
-                I’m always open for any new opportunities. Whether you have a
-                question or just want to say hi, I'm just a click away!
-              </p>
-              <form ref={form} onSubmit={sendEmail}>
-                <label>Name</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  ref={name}
-                  id="user_name"
-                  name="user_name"
-                  placeholder="Enter Name"
-                />
+                  <h1 className="fontc">
+                    {" "}
+                    Get In Touch! <FontAwesomeIcon icon={faEnvelopeOpenText} />
+                  </h1>{" "}
+                </center>
+              </Fade>
+              <Fade right>
+                <p>
+                  I’m always open for any new opportunities. Whether you have a
+                  question or just want to say hi, I'm just a click away!
+                </p>
+                <form ref={form} onSubmit={sendEmail}>
+                  <label>Name</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    ref={name}
+                    id="user_name"
+                    name="user_name"
+                    placeholder="Enter Name"
+                  />
 
-                <br></br>
-                <label>Email address</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  ref={email}
-                  id="user_email"
-                  name="user_email"
-                  placeholder="Enter email"
-                />
+                  <br></br>
+                  <label>Email address</label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    ref={email}
+                    id="user_email"
+                    name="user_email"
+                    placeholder="Enter email"
+                  />
 
-                <br></br>
-                <label>Your Message</label>
-                <textarea
-                  id="message"
-                  className="form-control"
-                  ref={message}
-                  name="message"
-                  placeholder="Enter Your Message"
-                />
+                  <br></br>
+                  <label>Your Message</label>
+                  <textarea
+                    id="message"
+                    className="form-control"
+                    ref={message}
+                    name="message"
+                    placeholder="Enter Your Message"
+                  />
 
-                <br></br>
-                <button type="submit" className="btn btn-primary">
-                  Send
-                </button>
-              </form>
+                  <br></br>
+                  <button type="submit" className="btn btn-primary">
+                    Send
+                  </button>
+                </form>
+              </Fade>
               <br></br>
               <br></br>
               <br></br>
 
-              <Fade delay={200} triggerOnce={"true"}>
+              <Fade left delay={200} triggerOnce={"true"}>
                 <div className="card w-100 justify-content-left cardbgandborder">
                   <div className="card-header">
                     <h3 className="fontd">Or Connect With Me</h3>
@@ -206,19 +203,7 @@ const Contact = () => {
                           </MouseParallaxChild>
                         </MouseParallaxContainer>
                       </div>
-                      {/* <div className="col-2">
-                        <MouseParallaxContainer>
-                          <MouseParallaxChild factorX={0.1} factorY={0.1}>
-                            <AnchorLink href="https://twitter.com/icecrams">
-                              <FontAwesomeIcon
-                                icon="fa-solid fa-phone"
-                                color="#3cba54"
-                                size="2x"
-                              />
-                            </AnchorLink>
-                          </MouseParallaxChild>
-                        </MouseParallaxContainer>
-                      </div> */}
+
                       <div className="col-2">
                         <MouseParallaxContainer>
                           <MouseParallaxChild factorX={0.1} factorY={0.1}>
@@ -244,21 +229,6 @@ const Contact = () => {
           <br></br>
           <br></br>
           <br></br>
-          {/* <div className="col-sm-6">
-                        <div>
-                            <MapContainer className="map" center={position} zoom={12} scrollWheelZoom={false}>
-                                <TileLayer
-                                    attribution='&amp;copy <a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">, &amp;copy  <a href="https://openmaptiles.org/">OpenMapTiles</a>, &amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                                    url="https://{s}.tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.png?access-token=LJYZLnmuipDZw5xABr2xi1gqd2848lcrhTveFzkXzyp9D6ViUbYUhe8A5ajqNX7f"
-                                />
-                                <Marker position={position} icon={geticon()}>
-                                    <Popup>
-                                        Bangalore, India
-                                    </Popup>
-                                </Marker>
-                            </MapContainer>
-                        </div>
-                    </div> */}
         </div>
       </div>
     </section>

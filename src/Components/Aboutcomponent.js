@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 //import ReactRoundedImage from "react-rounded-image";
-import { Fade } from "react-awesome-reveal";
+import Fade from "react-reveal/Fade";
 import "../css/about.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
@@ -17,25 +17,6 @@ import {
   MouseParallaxContainer,
   MouseParallaxChild,
 } from "react-parallax-mouse";
-
-/*
-        github-
-        git-
-        react-
-        redux
-        node-
-        express
-        mongodb-
-        mysql-
-        django-
-        flask-
-        python-
-        c++-
-        javascript-
-        keras-
-        scikit learn-
-        tensorflow-
-        */
 
 class About extends Component {
   constructor(props) {
@@ -96,7 +77,7 @@ class About extends Component {
         <div className="container ">
           <div className="row justify-content-center">
             <div className="heading" id="about" name="about">
-              <Fade triggerOnce={"true"}>
+              <Fade left triggerOnce={"true"}>
                 <p>
                   <center>
                     {" "}
@@ -113,7 +94,7 @@ class About extends Component {
 
           <div className="row justify-content-center">
             <div className="col-sm-12">
-              <Fade cascade triggerOnce={"true"} delay={500}>
+              <Fade right triggerOnce={"true"} delay={500}>
                 <p className="justify">
                   I’m a super curious guy and I spend a lot of time coding and
                   developing software, but there’s also a lot more to it.
@@ -144,7 +125,7 @@ class About extends Component {
 
           <div className="row justify-content-center">
             <div className="heading">
-              <Fade cascade={"true"} triggerOnce={"true"}>
+              <Fade left cascade={"true"} triggerOnce={"true"}>
                 <p>
                   <h2>
                     {" "}
@@ -155,7 +136,7 @@ class About extends Component {
             </div>
           </div>
 
-          <Fade cascade={"true"} triggerOnce={"true"} delay={500}>
+          <Fade right cascade={"true"} triggerOnce={"true"} delay={500}>
             <div className="row justify-content-center">
               <div className="card cardborder w-100 cardstyling text-center ">
                 <div className="card-body">
